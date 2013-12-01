@@ -1,0 +1,168 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+}
+
+body {
+  background-color: #333333;
+}
+
+.heading {
+  width: 250px;
+  margin: 0 auto;
+}
+
+.logoimg {
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  float: left;
+}
+
+.name {
+  float: right;
+  color: #faf9f0;
+  font-size: 25px;
+  margin-top: 25%;
+  font-family: 'Syncopate', sans-serif;
+}
+
+nav {
+  margin-top: 5px;
+  clear: both;
+}
+
+button {
+  width: 100%;
+  height: 50px;
+  background: #b13019;
+  border: #b13019;
+  color: #faf9f0;
+  font-size: 18px;
+  font-family: 'Syncopate', sans-serif;
+  margin-top: 2px;
+}
+
+button:hover {
+  text-decoration: none;
+  color: #333333;
+}
+
+.text {
+  width: 70%;
+  margin: 0 auto;
+  color: #faf9f0;
+  font-family: 'Syncopate', sans-serif;
+  position: absolute;
+  bottom: 1%;
+  left: 15%;
+  right: 15%;
+}
+
+.header {
+  font-size: 35px;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.subheader {
+  font-size: 25px;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.bodytext {
+  font-size: 15px;
+  text-align: justify;
+  margin-top: 20px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.link {
+  margin-top: 30px;
+  text-align: center;
+}
+
+@media screen and (min-width: 550px) {
+  nav {
+    text-align: center;
+  }
+
+  button {
+    display: inline-block;
+    width: 19%;
+    height: 30px;
+    font-size: 14px;
+    margin-left: 0;
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 900px) {
+  body {
+    margin-top: 105px;
+  }
+
+  .top {
+    height: 91px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    background-color: #b13019;
+  }
+
+  .strip {
+    height: 91px;
+    width: 72px;
+    position: absolute;
+    top: 0;
+    left: 6px;
+    background-color: #faf9f0;
+    z-index: 3;
+  }
+
+  .heading {
+    width: 180px;
+    margin-left: 6px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+  }
+
+  .logoimg {
+    width: 40%;
+    height: 40%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: left;
+  }
+
+  .name {
+    font-size: 20px;
+    margin-top: 27%;
+  }
+
+  nav {
+    position: absolute;
+    top: 32px;
+    right: 0px;
+    margin-right: 4px;
+    width: 76%;
+    z-index: 3;
+  }
+
+  button {
+    width: 19%;
+  }
+
+  .test {
+    margin-left: 225px;
+    color: white;
+    font-size: 100px;
+  }
+}
