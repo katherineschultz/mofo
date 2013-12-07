@@ -2,6 +2,7 @@ $orange: rgb(177,48,25);
 $red: rgb(170,24,24);
 $cream: #faf9f0;
 $grey: #333;
+$grey2: #555;
 
 * {
     -moz-box-sizing: border-box;
@@ -12,6 +13,16 @@ $grey: #333;
 
 body {
     background-color: $grey;
+    color: $cream;
+}
+
+a {
+    color: $cream;
+}
+
+a:hover {
+    color: $grey;
+    text-decoration: none;
 }
 
 .heading {
@@ -43,8 +54,8 @@ nav {
 button {
     width: 100%;
     height: 50px;
-    background: $orange;
-    border: $orange;
+    background: $red;
+    border: $red;
     color: $cream;
     font-size: 18px;
     font-family: 'Syncopate', sans-serif;
@@ -58,44 +69,6 @@ button:hover {
 
 
 
-
-
-
-
-.text {
-    width: 70%;
-    margin: 0 auto;
-    color: $cream;
-    font-family: 'Syncopate', sans-serif;
-    position: absolute;
-    bottom: 1%;
-    left: 15%;
-    right: 15%;
-}
-
-.header {
-    font-size: 35px;
-    text-align: center;
-    margin: 10px auto;
-}
-
-.subheader {
-    font-size: 25px;
-    text-align: center;
-    margin: 10px auto;
-}
-
-.bodytext {
-    font-size: 15px;
-    text-align: justify;
-    margin-top: 20px;
-    font-family: 'Quicksand', sans-serif;
-}
-
-.link {
-    margin-top: 30px;
-    text-align: center;
-}
 
 
 
@@ -118,7 +91,7 @@ button:hover {
 
 @media screen and (min-width: 900px) {
     body {
-    margin-top: 105px;
+    margin-top: 115px;
     }
 
     .top {
@@ -128,7 +101,7 @@ button:hover {
     left: 0;
     width: 100%;
     z-index: 2;
-    background-color: $orange;
+    background-color: $red;
     }
 
     .strip {
@@ -161,6 +134,7 @@ button:hover {
     .name {
     font-size: 20px;
     margin-top: 27%;
+    color: $cream;
     }
 
     nav {
@@ -168,18 +142,46 @@ button:hover {
     top: 32px;
     right: 0px;
     margin-right: 4px;
-    width: 76%;
+    width: 83%;
     z-index: 3;
     }
 
     button {
-    width: 19%;
+    width: 21%;
+    font-size: 20px;
     }
 
-    .test {
-    margin-left: 225px;
-    color: white;
-    font-size: 50px;
+    .content {
+    margin-left: 275px;
+    color: $cream;
+    font-size: 18px;
     font-family: 'Quicksand', sans-serif;
     }
+
+    section {
+    padding-bottom: 30px;
+    }
+
+    h3 {
+    color: $cream;
+    font-size: 45px;
+    font-family: 'Syncopate', sans-serif;
+    margin: 100px 0px 20px -30px;
+    }
+
+    .slide {
+    width: 60%;
+    }
+
+    p {
+    width: 95%;
+    margin-top: 15px;
+    }
+
+    .menu, .celeb, .form {
+    width: 60%;
+    border: 1px solid $cream;
+    padding: 10px;
+    }
+
 }
