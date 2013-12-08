@@ -10,23 +10,14 @@ body {
   color: #faf9f0;
 }
 
-a {
-  color: #faf9f0;
-}
-
-a:hover {
-  color: #333333;
-  text-decoration: none;
-}
-
 .heading {
-  width: 250px;
+  width: 210px;
   margin: 0 auto;
 }
 
 .logoimg {
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
   margin-top: 10px;
   margin-bottom: 10px;
   float: left;
@@ -36,7 +27,7 @@ a:hover {
   float: right;
   color: #faf9f0;
   font-size: 25px;
-  margin-top: 25%;
+  margin-top: 24%;
   font-family: 'Syncopate', sans-serif;
 }
 
@@ -47,13 +38,15 @@ nav {
 
 button {
   width: 100%;
-  height: 50px;
+  height: 45px;
   background: #aa1818;
-  border: #aa1818;
+  border: none;
   color: #faf9f0;
   font-size: 18px;
   font-family: 'Syncopate', sans-serif;
   margin-top: 2px;
+  text-decoration: none;
+  padding-top: 6px;
 }
 
 button:hover {
@@ -61,18 +54,81 @@ button:hover {
   color: #333333;
 }
 
-@media screen and (min-width: 550px) {
+section {
+  padding-bottom: 30px;
+}
+
+h3 {
+  color: #faf9f0;
+  font-size: 30px;
+  font-family: 'Syncopate', sans-serif;
+  margin: 30px 0px 20px 0px;
+}
+
+.media {
+  width: 100%;
+}
+
+p {
+  width: 100%;
+  margin-top: 15px;
+  color: #faf9f0;
+  font-size: 16px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+@media screen and (min-width: 475px) {
   nav {
     text-align: center;
   }
 
   button {
     display: inline-block;
-    width: 19%;
-    height: 30px;
+    width: 24%;
+    height: 34px;
     font-size: 14px;
     margin-left: 0;
     margin-top: 0;
+  }
+}
+@media screen and (min-width: 525px) {
+  .mediacont {
+    text-align: center;
+  }
+
+  .media {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 575px) {
+  button {
+    width: 24%;
+    height: 36px;
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 675px) {
+  .media {
+    width: 70%;
+  }
+
+  .textcont {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  p {
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 775px) {
+  .media {
+    width: 65%;
+  }
+
+  .textcont {
+    width: 85%;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 900px) {
@@ -81,7 +137,7 @@ button:hover {
   }
 
   .top {
-    height: 91px;
+    height: 80px;
     position: absolute;
     top: 0;
     left: 0;
@@ -91,18 +147,18 @@ button:hover {
   }
 
   .strip {
-    height: 91px;
-    width: 72px;
+    height: 80px;
+    width: 75px;
     position: absolute;
     top: 0;
-    left: 6px;
+    left: 0;
     background-color: #faf9f0;
     z-index: 3;
   }
 
   .heading {
     width: 180px;
-    margin-left: 6px;
+    margin-left: 0;
     position: fixed;
     top: 0;
     left: 0;
@@ -110,22 +166,19 @@ button:hover {
   }
 
   .logoimg {
-    width: 40%;
-    height: 40%;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 3px;
     float: left;
   }
 
   .name {
     font-size: 20px;
-    margin-top: 27%;
+    margin-top: 26%;
     color: #faf9f0;
   }
 
   nav {
     position: absolute;
-    top: 32px;
+    top: 18px;
     right: 0px;
     margin-right: 4px;
     width: 83%;
@@ -134,39 +187,43 @@ button:hover {
 
   button {
     width: 21%;
-    font-size: 20px;
   }
 
   .content {
-    margin-left: 275px;
-    color: #faf9f0;
-    font-size: 18px;
-    font-family: 'Quicksand', sans-serif;
-  }
-
-  section {
-    padding-bottom: 30px;
+    width: 55%;
+    margin: 0 auto;
   }
 
   h3 {
-    color: #faf9f0;
-    font-size: 45px;
-    font-family: 'Syncopate', sans-serif;
-    margin: 100px 0px 20px -30px;
+    font-size: 35px;
+    margin: 100px 0px 20px 0px;
   }
 
-  .slide {
-    width: 60%;
+  .media {
+    width: 90%;
+  }
+
+  .textcont {
+    width: 100%;
   }
 
   p {
-    width: 95%;
-    margin-top: 15px;
+    width: 100%;
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  button {
+    font-size: 20px;
   }
 
-  .menu, .celeb, .form {
-    width: 60%;
-    border: 1px solid #faf9f0;
-    padding: 10px;
+  h3 {
+    font-size: 45px;
+    margin: 100px 0px 20px -30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .media {
+    width: 80%;
   }
 }
