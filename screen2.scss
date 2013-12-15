@@ -60,6 +60,14 @@ button:hover {
     color: $grey;
 }
 
+button:active {
+    border: none;
+}
+
+button:visited {
+    border: none;
+}
+
 section {
     padding-bottom: 30px;
 }
@@ -69,10 +77,35 @@ h3 {
     font-size: 30px;
     font-family: 'Syncopate', sans-serif;
     margin: 30px 0px 20px 0px;
+    padding-top: 15px;
 }
 
 .media {
     width: 100%;
+}
+
+.videowrapper {
+    float: none;
+    clear: both;
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+}
+
+.videowrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.flex-caption {
+    text-align: center;
+    font-family: 'Syncopate', sans-serif;
+    font-size: 17px;
 }
 
 p {
@@ -83,6 +116,116 @@ p {
     font-family: 'Quicksand', sans-serif;
 }
 
+.menu {
+    background-image: url("paper.png");
+    background-size: cover;
+    border-radius: 5px;
+    border: 1px solid $red;
+    color: $grey;
+    padding: 15px;
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.menuhead {
+    font-size: 25px;
+    color: $red;
+    font-weight: bold;
+    font-family: 'Syncopate', sans-serif;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.menusubhead {
+    font-size: 17px;
+    color: $red;
+    margin-left: 3px;
+    text-align: center;
+}
+
+ul {
+    margin-left: -25px;
+}
+
+li {
+    list-style-type: none;
+    padding: 4px;
+}
+
+.listhead {
+    font-size: 20px;
+    color: $red;
+}
+
+.booking {
+    border: 1px solid $cream;
+    padding: 3px 10px;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+form {
+    font-family: 'Syncopate', sans-serif;
+    width: 95%;
+    padding: 10px;
+    margin: 0 auto;
+
+    button {
+        width: 100px;
+        padding: 8px 5px 5px 5px;
+        height: 30px;
+        margin-top: 10px;
+    }
+
+    input {
+        padding: 4px;
+        width: 60%;
+    }
+
+    label {
+        font-weight: bold;
+    }
+}
+
+.footer {
+    margin-top: 15px;
+    padding: 10px;
+    border-top: 1px solid $cream;
+}
+
+.icons {
+    text-align: left;
+    width: 100px;
+    float: left;
+}
+
+i {
+    color: $cream;
+    font-size: 35px;
+    margin: 0px 5px 5px 5px;
+
+    &:hover {
+        color: $red;
+    }
+}
+
+.copyright {
+    font-family: 'Syncopate', sans-serif;
+    font-size: 12px;
+    padding-top: 8px;
+    text-align: left;
+    padding-bottom: 5px;
+    width: 290px;
+}
+
+
+@media screen and (min-width: 375px) {
+    .copyright {
+    float: right;
+    width: 210px;
+    }
+}
 
 @media screen and (min-width: 475px) {
     nav {
@@ -97,15 +240,20 @@ p {
     margin-left: 0;
     margin-top: 0;
     }
+
+    form button {
+    width: 100px;
+    padding: 8px 5px 5px 5px;
+    height: 30px;
+    margin-top: 10px;
+    font-size: 18px;
+    }
 }
 
 @media screen and (min-width: 525px) {
     .mediacont {
-    text-align: center;
-    }
-
-    .media {
     width: 80%;
+    margin: 0 auto;
     }
 }
 
@@ -115,10 +263,20 @@ p {
     height: 36px;
     font-size: 17px;
     }
+
+    .booking {
+    width: 80%;
+    }
+
+    .copyright {
+    width: 375px;
+    text-align: right;
+    padding-top: 12px;
+    }
 }
 
 @media screen and (min-width: 675px) {
-    .media {
+    .mediacont {
     width: 70%;
     }
 
@@ -130,10 +288,15 @@ p {
     p {
     font-size: 17px;
     }
+
+    .menu {
+    width: 80%;
+    margin: 0 auto;
+    }
 }
 
 @media screen and (min-width: 775px) {
-    .media {
+    .mediacont {
     width: 65%;
     }
 
@@ -211,7 +374,7 @@ p {
     margin: 100px 0px 20px 0px;
     }
 
-    .media {
+    .mediacont {
     width: 90%;
     }
 
@@ -237,7 +400,7 @@ p {
 }
 
 @media screen and (min-width: 1200px) {
-    .media {
+    .mediacont {
     width: 80%;
     }
 }

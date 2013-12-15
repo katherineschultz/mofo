@@ -8,7 +8,18 @@
     <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="screen2.css">
     <link rel="stylesheet" type="text/css" href="font-awesome.min.css">
+    <link rel="stylesheet" href="font-awesome-4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="flexslider/flexslider.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script src="flexslider/jquery.flexslider.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Syncopate|Quicksand|Raleway' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript" charset="utf-8">
+  $(window).load(function() {
+    $('.flexslider').flexslider();
+  });
+</script>
+
 </head>
 <body>
 
@@ -22,8 +33,8 @@
     </div>
 
     <nav>
-        <a href="index.html"><button type="submit">home</button></a>
-        <a href="#about"><button type="submit">about</button></a>
+        <a href="index.html"><button type="submit">intro</button></a>
+        <a href="#about"><button type="submit">about us</button></a>
         <a href="#meat"><button type="submit">the meat</button></a>
         <a href="#book"><button type="submit">book us</button></a>
     </nav>
@@ -33,11 +44,37 @@
 
 <div class="content">
 
+
     <section class="about" id="about">
 
         <h3>about us</h3>
 
-        <div class="mediacont"><img class="media" src="slideshow.jpg" alt=""></div>
+        <div class="mediacont">
+            <div class="flexslider media">
+                <ul class="slides">
+                <li>
+                  <img src="images/mofo1.jpeg"/>
+                  <p class="flex-caption">meat on a grill</p>
+                </li>
+                <li>
+                  <img src="images/mofo2.jpeg"/>
+                  <p class="flex-caption">meat on a grill</p>
+                </li>
+                <li>
+                  <img src="images/mofo3.jpg"/>
+                  <p class="flex-caption">meat on a grill</p>
+                </li>
+                <li>
+                  <img src="images/mofo6.jpeg"/>
+                  <p class="flex-caption">meat on a grill</p>
+                </li>
+                <li>
+                  <img src="images/mofo7.jpeg"/>
+                  <p class="flex-caption">meat on a grill</p>
+                </li>
+                </ul>
+            </div>
+        </div>
 
         <div class="textcont">
             <p>text about what mofo is... Pork chop turducken t-bone beef pancetta. Bacon pork loin tail, chuck ground round frankfurter jowl swine shoulder beef. Capicola pancetta pig ham. Andouille ham hock tail turkey. Drumstick leberkas ham hock ground round. Ham pork chop drumstick, hamburger jerky ham hock tri-tip tongue shankle t-bone. Turkey ham meatball, doner swine jowl hamburger pig andouille short loin beef ribs shankle ball tip turducken.</p>
@@ -51,27 +88,43 @@
 
         <h3>the meat</h3>
 
-        <div class="mediacont"><img class="media" src="video.jpg" alt=""></div>
+        <div class="mediacont videowrapper">
+            <iframe width="560" height="315" src="//www.youtube.com/embed/00dGbkvFBrU?rel=0" frameborder="0" allowfullscreen></iframe>
+        </div>
 
         <div class="textcont">
             <p>text about "the meat of the matter"... Spare ribs rump pork loin tongue salami andouille ground round meatball shoulder. Ribeye ball tip pig, shankle swine pork loin tri-tip andouille flank jowl turkey meatball salami turducken shank. Tongue rump filet mignon bacon spare ribs tenderloin. Ham chuck shankle prosciutto, meatball jowl ribeye drumstick pork belly ham hock cow filet mignon sausage. Shankle ribeye short ribs sausage boudin meatball. Jowl short ribs brisket, ribeye salami chicken leberkas fatback meatloaf prosciutto ham shoulder pork chop swine. Turducken flank filet mignon venison kevin t-bone biltong cow meatball shank tri-tip chuck spare ribs salami.</p>
         </div>
 
-        <p class="menu">
-            Menu from March 18, 2011 M.O.F.O. Meating
-            Kettle Grilled on Frontier lump hardwood charcoal:
-            amuse-bouche: Lamb-pops (frenched lamb rib chop)
-            mise-en-bouche: Bacon-wrapped asparagus
-            starter: Fresh green "Sheleighlink" sausages, from Butcher & Larder
-            1st course: 4"-thick grass-fed Delmonico (bone-in top-loin strip), fresh-butchered from Butcher & Larder
-            2nd course: 2.5" thick Tomahawk (bone-in frenched ribeye), from Paulina Meat Market
-            Dessert: Oak-biscuit grilled Jumbo Stay-Puft with Hersheys on Grahams (MOFO s'mores)
-            Throughout:
-            Revolution Brewing Co's Eugene Porter, growler, Logan Square
-            Half Acre's Anniversary Baume Rye Stout, 22-oz bomber, Lincoln Square
-            Vinum Cellars 2008 Petite Sirah, Clarksburg, CA
-            Aperitif: Smith Woodhouse 1995 Late Bottled Vintage Porto, Portugal
-        </p>
+        <div class="menu">
+            <div class="menuhead">
+            sample m.o.f.o. menu
+            </div>
+            <br>
+
+            <div class="menusubhead">
+            March 18, 2011
+            <br>
+            Kettle grilled on Frontier lump hardwood charcoal
+            </div>
+
+            <ul>
+                <li class="listhead">On the Grill</li>
+                <li>Amuse-bouche: Lamb-pops (frenched lamb rib chop)</li>
+                <li>Mise-en-bouche: Bacon-wrapped asparagus</li>
+                <li>Starter: Fresh green "Sheleighlink" sausages, from Butcher & Larder</li>
+                <li>1st course: 4"-thick grass-fed Delmonico (bone-in top-loin strip), fresh-butchered from Butcher & Larder</li>
+                <li>2nd course: 2.5" thick Tomahawk (bone-in frenched ribeye), from Paulina Meat Market</li>
+                <li>Dessert: Oak-biscuit grilled Jumbo Stay-Puft with Hersheys on Grahams (MOFO s'mores)</li>
+            </ul>
+            <ul>
+                <li class="listhead">In the Glass</li>
+                <li>Revolution Brewing Co's Eugene Porter, Growler, Logan Square</li>
+                <li>Half Acre's Anniversary Baume Rye Stout, 22-oz bomber, Lincoln Square</li>
+                <li>Vinum Cellars 2008 Petite Sirah, Clarksburg, CA</li>
+                <li>Aperitif: Smith Woodhouse 1995 Late Bottled Vintage Porto, Portugal</li>
+            </ul>
+        </div>
 
     </section>
 
@@ -84,11 +137,33 @@
             <p class="attend">text about attending a m.o.f.o. event... Bresaola jerky meatball sirloin tenderloin beef strip steak, swine ball tip venison shoulder pig. Chuck shank fatback pastrami beef jowl. Ribeye shank ball tip turkey, pork loin tri-tip chuck turducken corned beef cow pastrami. Bacon short loin salami turducken jowl pancetta kielbasa filet mignon meatloaf pork loin frankfurter hamburger.</p>
         </div>
 
-        <p class="form">form here for booking m.o.f.o. at your next event... </p>
+        <div class="booking">
+            <p class="form">Interested in booking M.O.F.O. to grill at your event? Start the conversation by filling out your information below. We'll be in touch soon!</p>
+
+            <form action="">
+                <label for="name">Name : <input type="text" id="name" name="name" required></label>
+                <br>
+                <label for="email">Email : <input type="email" id="email" name="email" required></label>
+                <br>
+                <button class="formbutton" type="submit">Submit</button>
+            </form>
+        </div>
 
     </section>
 
 </div>
+
+<section class="footer">
+
+    <div class="icons">
+        <a href="https://www.facebook.com/MOFOrg"><i class="fa fa-facebook-square"></i></a>
+        <a href="mailto:info@moforg.org"><i class="fa fa-envelope"></i></a>
+    </div>
+
+    <div class="copyright">copyright: meat over fire organization, 2013</div>
+
+</section>
+
 
 </body>
 </html>
