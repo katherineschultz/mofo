@@ -110,6 +110,15 @@ p {
   font-family: 'Quicksand', sans-serif;
 }
 
+.textcont {
+  text-align: justify;
+}
+
+.meattext {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 .menu {
   background-image: url("paper.png");
   background-size: cover;
@@ -151,12 +160,20 @@ li {
   color: #aa1818;
 }
 
+.attend {
+  margin-bottom: 25px;
+}
+
 .booking {
   border: 1px solid #faf9f0;
-  padding: 3px 10px;
+  padding: 0px 10px 3px 10px;
   width: 90%;
   margin: 0 auto;
   border-radius: 5px;
+}
+
+.form {
+  text-align: justify;
 }
 
 form {
@@ -170,10 +187,14 @@ form button {
   padding: 8px 5px 5px 5px;
   height: 30px;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 form input {
   padding: 4px;
-  width: 60%;
+  width: 44%;
+}
+form input:focus {
+  border: 2px solid #aa1818;
 }
 form label {
   font-weight: bold;
@@ -235,6 +256,10 @@ i:hover {
     height: 30px;
     margin-top: 10px;
     font-size: 18px;
+  }
+
+  form input {
+    width: 60%;
   }
 }
 @media screen and (min-width: 525px) {
